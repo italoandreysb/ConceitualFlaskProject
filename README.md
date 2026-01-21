@@ -3,13 +3,13 @@
 1. Criando o venv
 
 ```
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+python3 -m venv .venv            # Criando o ambiente virtual
+source .venv/bin/activate        # Ativando o ambiente virtual
+pip install -r requirements.txt  # Instalando os requisitos a partir do arquivo de requirements
 ```
 2. Alterando a viariavel de ambiente:
 ```
-export FLASK_ENV=development
+export FLASK_ENV=development    # A variável de ambiente pode ser vista no arquivo config.py
 ```
 3. Executando a aplicação
 ```
@@ -29,7 +29,7 @@ CREATE DATABASE livro_flask CHARACTER SET UTF8 collate utf8_general_ci;
 SHOW DATABASES;   #Checar o banco de dados
 EXIT;     # Encerrando
 
-# Criando o usuáriio (No liro não pediu)
+# Criando o usuáriio (No livro não pediu)
 CREATE USER 'flaskuser'@'localhost' IDENTIFIED BY 'senha123';
 GRANT ALL PRIVILEGES ON livro_flask.* TO 'flaskuser'@'localhost';
 FLUSH PRIVILEGES;
