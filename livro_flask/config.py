@@ -7,6 +7,7 @@ class Config(object):
    os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates') 
    ROOT_DIR = os.path.dirname(os.path.abspath(__file__)) 
    APP = None 
+   SQLALCHEMY_DATABASE_URI = 'mysql+mysqldb://flaskuser:flask123@localhost:3306/database' # Alterar credenciais
 class DevelopmentConfig(Config): 
    TESTING = True 
    DEBUG = True 
